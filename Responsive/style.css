@@ -12,9 +12,11 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 20px;
     font-family: 'Barlow', sans-serif;
     background-color: var(--tausta);
     color: var(--text)
+    
 }
 
 h1 {
@@ -40,14 +42,14 @@ li, p {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 5px;
+    gap: 10px;
     background-color: #dde8ff;
     padding: 5px;
   }
   
   .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     font-size: 15px;
   }
@@ -68,7 +70,3 @@ button:hover {
     background-color: #04AA6D; /* Green */
     color: white;
   }
-
-div {
-    width: auto;
-}

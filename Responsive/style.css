@@ -68,3 +68,7 @@ button:hover {
     background-color: #04AA6D; /* Green */
     color: white;
   }
+
+div {
+    width: auto;
+}

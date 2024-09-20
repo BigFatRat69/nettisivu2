@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root {
+    --text: #141B2B;
+    --tausta: #dde8ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--tausta);
+    color: var(--text);
+}
+
+h1 {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    outline: auto;
+    line-height: 60px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+li, p {
+    padding: 5px;
+    margin-left: 50px;
+}
+
+/* Grid container for larger screens */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: #dde8ff;
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Button styling */
+button {
+    background-color: #17ffaa; /* Green */
+    border: inset;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    min-width: 150px; /* Ensures button doesn't shrink too much */
+}
+
+button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto; /* Single column for medium screens */
+        gap: 15px;
+    }
+
+    li, p {
+        margin-left: 20px;
+    }
+
+    button {
+        padding: 12px 24px;  /* Increased padding for better mobile touch interaction */
+        font-size: 18px;     /* Larger font size for readability */
+        min-width: 180px;    /* Ensure a wider button for touch comfort */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto; /* Single column for smaller screens */
+        gap: 20px;
+    }
+
+    li, p {
+        margin-left: 10px;
+    }
+
+    button {
+        padding: 14px 28px; /* Even more padding for smaller screens */
+        font-size: 20px;    /* Larger text size for smaller screens */
+        min-width: 200px;   /* Ensure an even larger button size */
+    }
+}
